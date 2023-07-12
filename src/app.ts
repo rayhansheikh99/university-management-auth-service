@@ -10,6 +10,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 //Application Route
+
 app.use('/api/v1/users/', usersRouter)
 
 app.get('/', async (req: Request, res: Response) => {
